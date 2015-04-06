@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+<ImageView
+   android:id="@+id/bglogin"
+   android:background="@drawable/bglogin"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" />
+
+           
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:gravity="center">
+        <TextView  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+           android:textColor="@android:color/black"
+        />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+       android:singleLine="true"
+       android:fadingEdge="horizontal"
+       android:hint="Masukan User-ID..."       
+       android:textSize="18sp"/>
+
+        <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Password"
+       android:textColor="@android:color/black"
+        />
+
+        <EditText
+       android:id="@+id/password"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:password="true"
+       android:singleLine="true"
+       android:fadingEdge="horizontal"     
+       android:hint="Masukan password..."       
+        android:textSize="18sp"       
+        />
+
+        <TextView  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="IMEI"
+           android:textColor="@android:color/black"
+        />
+        <EditText
+            android:id="@+id/imei"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+       android:singleLine="true"
+       android:fadingEdge="horizontal"
+       android:editable="false"
+       android:textSize="18sp"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"     
+       android:orientation="vertical"     
+       android:layout_width="fill_parent"     
+       android:layout_height="fill_parent"     
+       android:gravity="bottom">
+
+        <Button
+           android:id="@+id/okbutton"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="Login"
+       />
+    </LinearLayout>      
+</LinearLayout>
+</RelativeLayout>

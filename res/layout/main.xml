@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:background="@drawable/bglogin" android:keepScreenOn="true" android:paddingTop="5dip">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:id="@+id/idpelanggan" android:hint="Masukan ID Pelanggan" android:layout_width="230dip" android:inputType="number" android:layout_toLeftOf="@+id/button1">
+            <requestFocus></requestFocus>
+        </EditText>
+        <Button android:id="@+id/button1" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/qr"></Button>
+    </RelativeLayout>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txtmeter" android:hint="Masukan stan meter" android:inputType="number"></EditText>
+    <Spinner android:layout_height="wrap_content" android:id="@+id/spinner" android:layout_width="match_parent" android:prompt="@string/pilih_status"></Spinner>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:weightSum="1">
+        <EditText android:editable="false" android:hint="nama file foto" android:id="@+id/imgname" android:layout_height="wrap_content" android:layout_width="178dp" android:layout_weight="1.01" android:textSize="12dip"></EditText>
+        <Button android:text="Foto" android:layout_width="wrap_content" android:id="@+id/afoto" android:layout_height="match_parent"></Button>
+    </LinearLayout>    
+    <RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="match_parent" android:gravity="left" android:layout_height="wrap_content">
+        <EditText android:layout_height="wrap_content" android:id="@+id/loclat" android:layout_alignParentRight="true" android:layout_alignParentLeft="false" android:layout_width="160dip" android:hint="latitude" android:editable="false"></EditText>
+        <EditText android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:id="@+id/loclong" android:layout_width="160dip" android:hint="longitude" android:editable="false"></EditText>
+    </RelativeLayout>
+    
+	    		   
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"     
+       android:orientation="vertical"     
+       android:layout_width="fill_parent"     
+       android:gravity="bottom" android:weightSum="1" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:id="@+id/relimgphoto" android:layout_height="wrap_content" android:layout_weight="0.95" android:gravity="right">
+            
+				    <ImageView android:id="@+id/image"
+				    		   android:layout_width="fill_parent"
+				    		   android:layout_height="wrap_content" android:cropToPadding="true" android:visibility="visible"/>
+            
+            </RelativeLayout>
+
+        <Button
+           android:id="@+id/btnmeter"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="SIMPAN"
+       />
+    </LinearLayout>      
+
+</LinearLayout>

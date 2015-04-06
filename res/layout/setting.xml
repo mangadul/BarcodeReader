@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" android:title="Setting">
+    <PreferenceCategory android:title="User Setting">
+        <EditTextPreference
+        android:key="pref_username"
+        android:title="Username"
+        android:summary="Masukan user anda" />
+
+        <EditTextPreference
+        android:key="pref_passwd"
+        android:title="Password"
+        android:password="true"
+        android:summary="Masukan password anda" />
+        
+        <EditTextPreference
+        android:key="pref_wsdlurl"
+        android:title="WS Address"
+        android:summary="Alamat Web Service" />
+                 
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Mode Pengiriman">
+        
+       <CheckBoxPreference
+        android:key="pref_isphoto"
+        android:title="Mode Pengiriman photo"
+        android:summary="Aktifkan mode pengiriman data dan photo" />
+
+      <ListPreference 
+        android:key="pref_mode_list"
+        android:title="Mode Pengiriman Data"
+        android:dialogTitle="Mode Pengiriman Data"
+        android:summary="Pilihan Mode pengiriman data langsung ke server atau disimpan dahulu ke DB lokal android"
+        android:entries="@array/pref_mode_items"
+        android:entryValues="@array/pref_mode_items_values" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BarcodeReaderActivity!</string>    
+    <string name="app_name">Aplikasi Catat Meter PLN</string>
+  <string name="benchmark_name">ZXing Benchmark</string>
+  <string name="benchmark_help">Place images in /sdcard/zxingbenchmark, then check \"adb logcat\"
+    for results. Turn on Airplane Mode first for more reliable results.</string>
+  <string name="benchmark_run">Run benchmark</string>
+  <string name="benchmark_running">Benchmark running\u2026</string>
+
+  <string name="encode_bad_data">Encode bad data</string>
+  <string name="encode_contact">Encode contact</string>
+  <string name="encode_email">Encode email</string>
+  <string name="encode_location">Encode location</string>
+  <string name="encode_phone">Encode phone</string>
+  <string name="encode_sms">Encode SMS</string>
+  <string name="encode_url">Encode URL</string>
+
+  <string name="get_camera_parameters">Get camera parameters</string>
+  <string name="ok_button">OK</string>
+  <string name="parameters_message">Collecting camera parameters to email to ZXing Team\u2026</string>
+
+  <string name="result_failed">No barcode found</string>
+  <string name="result_failed_why">"The user gave up and pressed Back"</string>
+  <string name="result_succeeded">Found barcode</string>
+
+  <string name="save_failed">Save failed - is the SD card installed?</string>
+  <string name="save_succeeded">Save succeeded</string>
+  <string name="scan_anything">Scan anything</string>
+  <string name="scan_product">Scan product</string>
+  <string name="scan_qr_code">Scan QR Code</string>
+  <string name="search_book_contents">Search Book Contents</string>
+  <string name="share_via_barcode">Share via barcode</string>
+  <string name="status_message">Press the shutter button or Search to save test images to the
+    SD card. Press DPAD_CENTER to trigger autofocus.</string>
+  <string name="take_test_photos">Take test photos</string>
+  
+    <string name="pilih_status">Pilih Status Catat</string>
+    <string name="no_list">Belum ada data yang tersimpan</string>
+    <color name="listcolor">#FFE87C</color>
+    <color name="black">#000000</color>
+
+    <string-array name="pref_mode_items">
+        <item>Disimpan dahulu</item>
+        <item>Langsung dikirim</item>
+    </string-array>
+
+    <string-array name="pref_mode_items_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <string name="title_about">Aplikasi Catat Meter PLN v.1.0.07.11</string>
+    <string name="msg_about">Aplikasi ini khusus diperuntukan untuk pencatatan meter PLN dengan menggunakan sistem operasi Android. Untuk informasi lebih lanjut tentang aplikasi ini silahkan klik "Buka Browser"</string>
+    <string name="about_url">http://www.ccs.web.id/</string>    
+    <string name="button_open_browser">Buka Browser</string>    
+    <string name="button_cancel">Batal</string>    
+    <string name="exit_message">Apakah Anda mau keluar aplikasi Catat Meter PLN?</string>    
+    <string name="exit_title">Keluar Aplikasi</string>    
+
+</resources>
